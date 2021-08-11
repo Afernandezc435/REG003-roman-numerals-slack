@@ -1,11 +1,11 @@
 {
-  "name": "REG003-roman-numerals-slack",
+  "name": "api-roman-numerals-slack",
   "version": "1.0.0",
   "description": "* [1. Preámbulo](#1-preámbulo)\r * [2. Resumen del proyecto](#2-resumen-del-proyecto)\r * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)\r * [4. Consideraciones generales](#4-consideraciones-generales)\r * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)\r * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose --coverage",
-    "start": "node index.js"
+    "start": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/CaroRo451/REG003-roman-numerals-slack/issues"
   },
-  "homepage": "https://github.com/CaroRo451/REG003-roman-numerals-slack#readme"
+  "homepage": "https://github.com/CaroRo451/REG003-roman-numerals-slack#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "roman-numerals-a": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
