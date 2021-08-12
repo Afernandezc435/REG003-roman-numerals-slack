@@ -38,9 +38,11 @@ app
     let result;
     switch (option) {
       case 'parse':
+      case '/parse':
         result = romanNumerals.parse(text);
         break;
       case 'stringify':
+      case '/stringify':
         result = romanNumerals.stringify(parseInt(text));
         break;
       default:
