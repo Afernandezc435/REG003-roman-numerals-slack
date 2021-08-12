@@ -7,6 +7,9 @@
     "test": "jest --verbose --coverage",
     "start": "nodemon server/server.js"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CaroRo451/REG003-roman-numerals-slack.git"
