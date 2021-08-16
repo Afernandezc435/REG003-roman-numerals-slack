@@ -39,13 +39,16 @@ app
     switch (option) {
       case 'parse':
       case '/parse':
+        res.statusCode = 200;
         result = romanNumerals.parse(text);
         break;
       case 'stringify':
       case '/stringify':
+        res.statusCode = 200;
         result = romanNumerals.stringify(parseInt(text));
         break;
       default:
+        res.statusCode = 500;
         result = 'comando incorrecto (debe ser "parse" o "stringify")';
     }
     res.json({
